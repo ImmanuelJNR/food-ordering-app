@@ -56,7 +56,7 @@ const Menu: FC = () => {
           <ItemsGrid>
                 {filteredItems.map((item, index) => (
                 <ItemCard  key={index}>
-                    <img src={`/${item.image}`} alt={item.name} />
+                    <img src={item.image} alt={item.name} />
                     <h2>{item.name}</h2>
                     
                     <PriceBox>
