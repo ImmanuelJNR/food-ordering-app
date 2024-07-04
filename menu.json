@@ -6,14 +6,14 @@
         {
           "id": 1,
           "name": "Jollof Rice",
-          "image": "public/CFC0101712155161933.jpg",
+          "image": "./src/assets/CFC0101712155161933.jpg",
           "price": 1100,
           "category": "Food"
         },
         {
           "id": 2,
           "name": "Fried Rice",
-          "image": "public/CFC0061712155157791.jpg",
+          "image": "/public/CFC0061712155157791.jpg",
           "price": 1100,
           "category": "Food"
         },

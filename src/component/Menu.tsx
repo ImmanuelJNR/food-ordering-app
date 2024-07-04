@@ -6,7 +6,6 @@ import { useCart } from '../Context/CartContext';
 import Logo from "../../public/crunchies-logo.webp"
 import { Nav, Header, SignInBtn, TabsContainer, ItemsGrid, ItemCard, PriceBox, Blur} from "../styles/Menu.styled";
 import { FaShoppingCart} from 'react-icons/fa';
-import "../menu.json";
 
 
 
