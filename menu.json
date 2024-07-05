@@ -13,28 +13,28 @@
         {
           "id": 2,
           "name": "Fried Rice",
-          "image": "./public/CFC0061712155157791.jpg",
+          "image": "/CFC0061712155157791.jpg",
           "price": 1100,
           "category": "Food"
         },
         {
           "id": 3,
           "name": "Coconut Rice",
-          "image": "./public/CFC1301712155133522.jpg",
+          "image": "/CFC1301712155133522.jpg",
           "price": 1200,
           "category": "Food"
         },
         {
           "id": 4,
           "name": "Spaghetti",
-          "image": "./public/CFC0161712155128696.jpg",
+          "image": "/CFC0161712155128696.jpg",
           "price": 1300,
           "category": "Food"
         },
         {
           "id": 5,
           "name": "Moi Moi (unwrapped)",
-          "image": "./public/moimoi.jpg",
+          "image": "/moimoi.jpg",
           "price": 1000,
           "category": "Food"
         },
