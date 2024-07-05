@@ -1,6 +1,6 @@
 // MenuContext.tsx
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import menuData from '../../menu.json'; // Import the JSON data
+import menuData from '../../public/menu.json'; // Import the JSON data
 import { MenuData } from '../types/types';
 
 interface MenuContextProps {

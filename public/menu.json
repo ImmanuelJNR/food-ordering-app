@@ -13,14 +13,14 @@
         {
           "id": 2,
           "name": "Fried Rice",
-          "image": "/CFC0061712155157791.jpg",
+          "image": "./CFC0061712155157791.jpg",
           "price": 1100,
           "category": "Food"
         },
         {
           "id": 3,
           "name": "Coconut Rice",
-          "image": "/CFC1301712155133522.jpg",
+          "image": "./CFC1301712155133522.jpg",
           "price": 1200,
           "category": "Food"
         },
@@ -41,7 +41,7 @@
         {
           "id": 6,
           "name": "Egg Sauce",
-          "image": "./public/CFC0191712155070210.jpg",
+          "image": "/CFC0191712155070210.jpg",
           "price": 1200,
           "category": "Food"
         },
