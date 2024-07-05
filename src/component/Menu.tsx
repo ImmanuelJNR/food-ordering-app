@@ -6,6 +6,7 @@ import { useCart } from '../Context/CartContext';
 import Logo from "../../public/crunchies-logo.webp"
 import { Nav, Header, SignInBtn, TabsContainer, ItemsGrid, ItemCard, PriceBox, Blur} from "../styles/Menu.styled";
 import { FaShoppingCart} from 'react-icons/fa';
+import image from '../assets/CFC0101712155161933.jpg'
 
 
 
@@ -56,7 +57,8 @@ const Menu: FC = () => {
           <ItemsGrid>
                 {filteredItems.map((item, index) => (
                 <ItemCard  key={index}>
-                    <img src={item.image} alt={item.name} />
+                    {/* <img src={item.image} alt={item.name} /> */}
+                    <img src={image} alt={item.name} />
                     <h2>{item.name}</h2>
                     
                     <PriceBox>

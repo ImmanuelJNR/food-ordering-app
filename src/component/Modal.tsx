@@ -3,6 +3,7 @@ import {FaRegCheckCircle, FaTimes } from 'react-icons/fa';
 import { useCart } from '../Context/CartContext';
 import { motion } from 'framer-motion';
 
+
 import styled from 'styled-components';
 
 const Modal = styled(motion.div) `
