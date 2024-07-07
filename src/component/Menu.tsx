@@ -6,9 +6,7 @@ import { useCart } from '../Context/CartContext';
 import Logo from "../../public/crunchies-logo.webp"
 import { Nav, Header, SignInBtn, TabsContainer, ItemsGrid, ItemCard, PriceBox, Blur} from "../styles/Menu.styled";
 import { FaShoppingCart} from 'react-icons/fa';
-// import image from '../assets/CFC0101712155161933.jpg';
-// import images from '../utils/loadjsonImage';
-// import menuData from '../menu.json';
+
 
 
 
@@ -73,9 +71,7 @@ const Menu: FC = () => {
                 </ItemCard>
                 ))}
            </ItemsGrid>
-           {/* {isSummaryOpen || isCartOpen && <Blur className='blur'></Blur>} */}
            {(isSummaryOpen || isCartOpen) && <Blur className='blur'></Blur>}
-           {/* <img src={rice} alt='image'/> */}
         </>
     )
     

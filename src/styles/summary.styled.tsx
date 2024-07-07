@@ -45,21 +45,52 @@ export const Summarycontainer = styled(motion.div)`
    .Total-box{
    font-weight: bold;
    font-size: 1rem;
-    display: flex;
+   display: flex;
    justify-content: space-between;
    align-items: center;
    margin: 10px 0;
-
    }
-`
-export const PaymentBtn = styled.button`
+
+   .payStackBtn{
    width: 100%;
    padding: 15px 0;
    border-radius: 30px;
    border: 1px solid transparent;
    background-color: #179F83;
    color: #FFFF;
-   margin-top: 20px;
+   // margin-top: 20px;
    cursor: pointer;
+   }
+`
+export const EmailContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+
+   label{
+   //  text-align: start;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+   }
+
+   input{
+     width: 100%;
+     border-radius: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     border-radius: 20px;
+     background-color: transparent;
+     border: 1px solid black;
+     outline: none;
+     font-weight: 500;
+     font-size: 0.85rem;
+   }
+   input:focus {
+      outline: none;
+      border: 2px solid black;
+   }
 
 `

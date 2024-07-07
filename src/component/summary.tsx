@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { Summarycontainer, PaymentBtn } from "../styles/summary.styled";
+import { Summarycontainer, EmailContainer} from "../styles/summary.styled";
 import { useCart } from '../Context/CartContext';
 import {FaTimes} from 'react-icons/fa';
-// import {motion} from "framer-motion";
+import { PaystackButton } from "react-paystack";
 
 
 
@@ -10,7 +10,6 @@ const bounceFromTopAnimation = {
     initial: { y: '-50vh', opacity: 0, translateX: '-50%', translateY: '-50%' },
     animate: { 
       y: [ -100, 0, -50, 0 ],
-    //   y: [ -50, 0, -30, 0 ], // Keyframes for double bounce
       opacity: 1,
       translateX: '-50%', translateY: '-50%',
       transition: {
@@ -33,20 +32,40 @@ const bounceFromTopAnimation = {
 
 
 const Summary: FC = () => {
-    const { total, isSummaryOpen, closeSummary } = useCart();
-    const serviceCharge = 144.25;
-    const deliveryCharge = 1000;
+    const publicKey = "pk_test_d7f2cc1d6ea3a2c847271ef9617e7426f1362672"
+    const { total, isSummaryOpen, closeSummary, email, setEmail } = useCart();
+    const serviceCharge = 100;
+    const deliveryCharge = 500;
     const grandTotal = total + serviceCharge + deliveryCharge;
 
     if (!isSummaryOpen) return null;
 
+ 
+
+    const componentProps = {
+      email, // Replace with actual customer email
+      amount: grandTotal * 100, // Paystack expects amount in kobo (smallest unit of currency)
+      publicKey,
+      text: "Proceed To Payment",
+      onSuccess: (reference: any) => {
+        console.log(reference);
+        // Handle success case
+      },
+      onClose: () => {
+        console.log('Payment closed');
+        // Handle close case
+      },
+    };
+
+    const isEmailValid = email.trim() !== "";
+
     return(
-        <Summarycontainer 
+      <Summarycontainer 
         style={{ display: isSummaryOpen ? 'flex' : 'none' }}
         initial="initial"
         animate={isSummaryOpen ? "animate" : "exit"}
         variants={bounceFromTopAnimation}
-        >
+      >
             <FaTimes onClick={closeSummary} className="exitSummary"/>
             <h3>Summary</h3>
             {/* <div> */}
@@ -67,9 +86,23 @@ const Summary: FC = () => {
                 <p>Total</p>
                 <p>NGN {grandTotal}</p>
             </div>
+            <hr/>
+            <EmailContainer>
+                <label htmlFor="email">Enter email to proceed</label>
+                <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+            </EmailContainer>
             {/* </div> */}
-            <PaymentBtn onClick={closeSummary}>Proceed to pay</PaymentBtn>
-        </Summarycontainer>
+            {/* <PaymentBtn onClick={handlePayment}>Proceed to pay</PaymentBtn> */}
+            {isEmailValid && (
+            <PaystackButton {...componentProps} className="payStackBtn" />
+            )}
+      </Summarycontainer>
     )
 }
 

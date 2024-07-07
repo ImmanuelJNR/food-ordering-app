@@ -14,6 +14,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [total, setTotal] = useState(0);
   const [isSummaryOpen, setIsSummaryOpen] = useState(false);
   const [isSuccessModalVisible, setIsSuccessModalVisible] = useState(false);
+  const [email, setEmail] = useState('');
 
     // Calculate the total whenever cartItems change
     useEffect(() => {
@@ -80,7 +81,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateItemCount, isCartOpen, openCart, closeCart, getTotalItemCount, total, openSummary, closeSummary, isSuccessModalVisible, showSuccessModal, isSummaryOpen, hideSuccessModal }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateItemCount, isCartOpen, openCart, closeCart, getTotalItemCount, total, openSummary, closeSummary, isSuccessModalVisible, showSuccessModal, isSummaryOpen, hideSuccessModal, email, setEmail }}>
       {children}
     </CartContext.Provider>
   );

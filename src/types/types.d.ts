@@ -37,6 +37,9 @@ export interface CartContextProps {
   isSuccessModalVisible: boolean; // Add this line
   showSuccessModal: () => void; // Add this line
   hideSuccessModal: () => void; // Add this line
+
+  email: string;
+  setEmail: (email: string) => void;
 }
 
 export interface SuccessModalProps {

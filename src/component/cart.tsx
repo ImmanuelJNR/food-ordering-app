@@ -8,7 +8,9 @@ import { motion } from "framer-motion";
 
 
 
+
 const Cart: FC= () => {
+
     const { cartItems, removeFromCart, updateItemCount, isCartOpen, closeCart, total, openSummary } = useCart();
 
     const handleDecrement = (index: number) => {
