@@ -6,7 +6,7 @@
         {
           "id": 1,
           "name": "Jollof Rice",
-          "image": "./src/assets/CFC0101712155161933.jpg",
+          "image": "./CFC0101712155161933.jpg",
           "price": 1100,
           "category": "Food"
         },
@@ -27,28 +27,28 @@
         {
           "id": 4,
           "name": "Spaghetti",
-          "image": "/CFC0161712155128696.jpg",
+          "image": "./CFC0161712155128696.jpg",
           "price": 1300,
           "category": "Food"
         },
         {
           "id": 5,
           "name": "Moi Moi (unwrapped)",
-          "image": "/moimoi.jpg",
+          "image": "./moimoi.jpg",
           "price": 1000,
           "category": "Food"
         },
         {
           "id": 6,
           "name": "Egg Sauce",
-          "image": "/CFC0191712155070210.jpg",
+          "image": "./CFC0191712155070210.jpg",
           "price": 1200,
           "category": "Food"
         },
         {
           "id": 7,
           "name": "Vegetable Salad",
-          "image": "./public/CFC0141712155080353.jpg",
+          "image": "./CFC0141712155080353.jpg",
           "price": 700,
           "category": "Food" 
 
@@ -56,28 +56,28 @@
         {
           "id": 8,
           "name": "Butter Beans",
-          "image": "./public/butterbeans.jpg",
+          "image": "./butterbeans.jpg",
           "price": 1050,
           "category": "Food"
         },
         {
           "id": 9,
           "name": "Ofada Rice",
-          "image": "./public/CFC0111712155144768.jpg",
+          "image": "./CFC0111712155144768.jpg",
           "price": 1700, 
           "category": "Food"
         },
         {
           "id": 10,
           "name": "Fried Plantain",
-          "image": "./public/friedplantain.jpg",
+          "image": "./friedplantain.jpg",
           "price": 600,
           "category": "Food"
         },
         {
           "id": 11,
           "name": "White Yam",
-          "image": "./public/whiteYam.jpg",
+          "image": "./whiteYam.jpg",
           "price": 1050,
           "category": "Food"
         }
@@ -89,49 +89,49 @@
         {
           "id": 12,
           "name": "Meat Pie",
-          "image": "./public/meatpie.jpg",
+          "image": "./meatpie.jpg",
           "price": 800,
           "category": "Pastry"
         },
         {
           "id": 13,
           "name": "Chicken pie",
-          "image": "./public/chickenpie.jpg",
+          "image": "./chickenpie.jpg",
           "price": 800,
           "category": "Pastry"
         },
         {
           "id": 14,
           "name": "Jumbo Roll",
-          "image": "./public/jumboroll.jpg",
+          "image": "./jumboroll.jpg",
           "price": 900,
           "category": "Pastry"
         },
         {
           "id": 15,
           "name": "Fiesta",
-          "image": "./public/fiesta.jpg",
+          "image": "./fiesta.jpg",
           "price": 1500,
           "category": "Pastry"
         },
         {
           "id": 16,
           "name": "Chin Chin",
-          "image": "./public/chinchin.jpg",
+          "image": "./chinchin.jpg",
           "price": 1000,
           "category": "Pastry"
         },
         {
           "id": 17,
           "name": "Scones",
-          "image": "./public/scones.jpg",
+          "image": "./scones.jpg",
           "price": 850, 
           "category": "Pastry"
         },
         {
           "id": 18,
           "name": "Jam Doughnut",
-          "image": "./public/jamdougnut.jpg",
+          "image": "./jamdougnut.jpg",
           "price": 850,
           "category": "Pastry"
         }
@@ -143,7 +143,7 @@
         {
           "id": 19,
           "name": "Plum Cake Full",
-          "image": "./public/plum-cake-full.jpg",
+          "image": "./plum-cake-full.jpg",
           "price": 2500,
           "category": "Cake"
         }
@@ -155,14 +155,14 @@
         {
           "id": 20,
           "name": "Coca cola",
-          "image": "./public/cocacola.jpeg",
+          "image": "./cocacola.jpeg",
           "price": 500,
           "category": "Drinks"
         },
         {
           "id": 21,
           "name": "Schweppes",
-          "image": "./public/schweppes.jpeg",
+          "image": "./schweppes.jpeg",
           "price": 500,
           "category": "Drinks"
         }
@@ -174,21 +174,21 @@
         {
           "id": 22,
           "name": "Oven Fresh Bread",
-          "image": "./public/Ovenbread.jpg",
+          "image": "./Ovenbread.jpg",
           "price": 1300,
           "category": "Bread"
         },
         {
           "id": 23,
           "name": "Queen's Bread",
-          "image": "./public/queenBread.jpg",
+          "image": "./queenBread.jpg",
           "price": 900, 
           "category": "Bread"
         },
         {
           "id": 24,
           "name": "tubeBread",
-          "image": "./public/tubebread.jpg",
+          "image": "./tubebread.jpg",
           "price": 1300,
           "category": "Bread"
         }
@@ -200,21 +200,21 @@
         {
           "id": 25,
           "name": "Ice cream",
-          "image": "./public/Icecream.jpg",
+          "image": "./Icecream.jpg",
           "price": 1300,
           "category": "Ice Cream"
         },
         {
           "id": 26,
           "name": "cup Ice Cream",
-          "image": "./public/cup-Ice-cream.jpg",
+          "image": "./cup-Ice-cream.jpg",
           "price": 900, 
           "category": "Ice Cream"
         },
         {
           "id": 27,
           "name": "Pop Corn",
-          "image": "./public/popcorn.jpg",
+          "image": "./popcorn.jpg",
           "price": 900, 
           "category": "Ice Cream"
         }
